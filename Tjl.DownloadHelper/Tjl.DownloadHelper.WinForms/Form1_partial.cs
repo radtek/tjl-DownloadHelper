@@ -32,13 +32,15 @@ namespace Tjl.DownloadHelper.WinForms
          var keyValuePairDict = new Dictionary<string, string>();
          keyValuePairDict.Add("__FILE-NAME-WITHOUT-PATH__", mfi.DirTargetRelative);
          keyValuePairDict.Add("__DOWNLOAD-TOOL__", txtDownloadTool.Text);
-         keyValuePairDict.Add("__YOUTUBE-PUBLISHER__", "IMPLEMENT_LOGIC");   //TODO: find out publisher-info using Google-API.
-         keyValuePairDict.Add("__MEDIA-LENGTH__", "IMPLEMENT_LOGIC");     //TODO: find out media-format from media-file itself
-         keyValuePairDict.Add("__MEDIA-FORMAT__", "IMPLEMENT_LOGIC");     //TODO: find out media-format from media-file itself
+         keyValuePairDict.Add("__YOUTUBE-PUBLISHER__", txtMediaFilePublisher.Text);   //TODO: find out publisher-info using Google-API.
+         keyValuePairDict.Add("__MEDIA-LENGTH__", txtMediaLength.Text);     //TODO: find out media-format from media-file itself 
+         keyValuePairDict.Add("__MEDIA-FORMAT__", txtMediaFormat.Text);     //TODO: find out media-format from media-file itself
+         keyValuePairDict.Add("__ORIGINAL-PUBLISHER__", mfi.DirTargetRelative);
          keyValuePairDict.Add("__DOWNLOAD-DATE__", DateTime.Now.ToString("u"));
          keyValuePairDict.Add("__ADDITIONAL-INFO__", txtAdditionalInfo.Text);
          
          //TODO: Add more information from file: size, format etc.
+         txtFilePathTarget.Text = mfi.FilePathTargetFull;
 
          mfi.CreateFolderAndFile(keyValuePairDict, txtMediaDirRelativeWithoutYoutubeId.Text);
       }

@@ -67,8 +67,8 @@ namespace Tjl.DownloadHelper.Core
          string fileContentTemplate = File.ReadAllText(FilePathTemplate);
          var fileContentReplaced = ReplaceKeywordsInFile(fileContentTemplate, keyValuePairList);
          var targetDir = Path.Combine(MediaFileDirBase, DirTargetRelative);
-         Directory.CreateDirectory(targetDir);
-         File.WriteAllText(this.FilePathTargetFull, fileContentReplaced);
+         Directory.CreateDirectory(targetDir);     //TODO: Warn if exists
+         File.WriteAllText(this.FilePathTargetFull, fileContentReplaced);  //TODO: Warn if exists
       }
    }
 }

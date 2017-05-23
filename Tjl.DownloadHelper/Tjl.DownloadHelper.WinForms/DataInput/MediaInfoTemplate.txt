@@ -4,6 +4,7 @@ Download-Tool: __DOWNLOAD-TOOL__
 YouTube-publisher: __YOUTUBE-PUBLISHER__
 Length: __MEDIA-LENGTH__
 format: __MEDIA-FORMAT__
-download-Date: __DOWNLOAD-DATE__
+Original publiher: __ORIGINAL-PUBLISHER__
+Download Date: __DOWNLOAD-DATE__
 
 __ADDITIONAL-INFO__
