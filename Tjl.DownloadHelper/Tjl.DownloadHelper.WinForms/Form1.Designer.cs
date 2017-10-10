@@ -91,7 +91,7 @@
          this.txtAdditionalInfo.Name = "txtAdditionalInfo";
          this.txtAdditionalInfo.ScrollBars = System.Windows.Forms.ScrollBars.Both;
          this.txtAdditionalInfo.Size = new System.Drawing.Size(746, 322);
-         this.txtAdditionalInfo.TabIndex = 4;
+         this.txtAdditionalInfo.TabIndex = 7;
          this.txtAdditionalInfo.WordWrap = false;
          // 
          // txtFilePathTarget
@@ -102,7 +102,8 @@
          this.txtFilePathTarget.Name = "txtFilePathTarget";
          this.txtFilePathTarget.ReadOnly = true;
          this.txtFilePathTarget.Size = new System.Drawing.Size(717, 20);
-         this.txtFilePathTarget.TabIndex = 5;
+         this.txtFilePathTarget.TabIndex = 9;
+         this.txtFilePathTarget.DoubleClick += new System.EventHandler(this.txtFilePathTarget_DoubleClick);
          // 
          // txtMediaDirRelativeWithoutYoutubeId
          // 
@@ -111,7 +112,7 @@
          this.txtMediaDirRelativeWithoutYoutubeId.Location = new System.Drawing.Point(115, 38);
          this.txtMediaDirRelativeWithoutYoutubeId.Name = "txtMediaDirRelativeWithoutYoutubeId";
          this.txtMediaDirRelativeWithoutYoutubeId.Size = new System.Drawing.Size(745, 20);
-         this.txtMediaDirRelativeWithoutYoutubeId.TabIndex = 6;
+         this.txtMediaDirRelativeWithoutYoutubeId.TabIndex = 1;
          // 
          // txtDownloadTool
          // 
@@ -120,7 +121,7 @@
          this.txtDownloadTool.Location = new System.Drawing.Point(115, 63);
          this.txtDownloadTool.Name = "txtDownloadTool";
          this.txtDownloadTool.Size = new System.Drawing.Size(745, 20);
-         this.txtDownloadTool.TabIndex = 6;
+         this.txtDownloadTool.TabIndex = 2;
          // 
          // lblDownloadTool
          // 
@@ -147,7 +148,7 @@
          this.txtMediaFormat.Location = new System.Drawing.Point(115, 94);
          this.txtMediaFormat.Name = "txtMediaFormat";
          this.txtMediaFormat.Size = new System.Drawing.Size(745, 20);
-         this.txtMediaFormat.TabIndex = 6;
+         this.txtMediaFormat.TabIndex = 3;
          // 
          // lblMediaFormat
          // 
@@ -165,7 +166,7 @@
          this.txtMediaFilePublisher.Location = new System.Drawing.Point(116, 120);
          this.txtMediaFilePublisher.Name = "txtMediaFilePublisher";
          this.txtMediaFilePublisher.Size = new System.Drawing.Size(745, 20);
-         this.txtMediaFilePublisher.TabIndex = 8;
+         this.txtMediaFilePublisher.TabIndex = 4;
          // 
          // lblMediaFilePublisher
          // 
@@ -183,7 +184,7 @@
          this.txtMediaLength.Location = new System.Drawing.Point(115, 146);
          this.txtMediaLength.Name = "txtMediaLength";
          this.txtMediaLength.Size = new System.Drawing.Size(746, 20);
-         this.txtMediaLength.TabIndex = 8;
+         this.txtMediaLength.TabIndex = 5;
          // 
          // lblMediaLength
          // 
@@ -201,7 +202,7 @@
          this.txtOriginalPublisher.Location = new System.Drawing.Point(115, 172);
          this.txtOriginalPublisher.Name = "txtOriginalPublisher";
          this.txtOriginalPublisher.Size = new System.Drawing.Size(745, 20);
-         this.txtOriginalPublisher.TabIndex = 10;
+         this.txtOriginalPublisher.TabIndex = 6;
          // 
          // lblOriginaPublisher
          // 
@@ -239,7 +240,7 @@
          this.txtMediaFolderBase.Location = new System.Drawing.Point(115, 526);
          this.txtMediaFolderBase.Name = "txtMediaFolderBase";
          this.txtMediaFolderBase.Size = new System.Drawing.Size(745, 20);
-         this.txtMediaFolderBase.TabIndex = 14;
+         this.txtMediaFolderBase.TabIndex = 8;
          // 
          // lblMediaFolderBase
          // 
@@ -287,7 +288,7 @@
          this.Controls.Add(this.lblUrlSource);
          this.Controls.Add(this.txtUrlSource);
          this.Name = "Form1";
-         this.Text = "Form1";
+         this.Text = "TJL Media Download Helper";
          this.Load += new System.EventHandler(this.Form1_Load);
          this.ResumeLayout(false);
          this.PerformLayout();

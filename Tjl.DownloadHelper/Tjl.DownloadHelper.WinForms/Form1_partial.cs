@@ -63,5 +63,10 @@ namespace Tjl.DownloadHelper.WinForms
             System.Windows.Forms.Clipboard.SetDataObject(txtFilePathTarget.Text, true);
          }
       }
+
+      private void txtFilePathTarget_DoubleClick(object sender, EventArgs e)
+      {
+         txtFilePathTarget.SelectAll();
+      }
    }
 }
