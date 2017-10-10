@@ -21,8 +21,8 @@ namespace Tjl.DownloadHelper.WinForms
       private void btnDo_Click(object sender, EventArgs e)
       {
          var uriYouTube = new Uri(txtUrlSource.Text);
-         //this.txtSourceMediaId.Text = MediaInfoFile.GetYouTubeId(uriYouTube);
-         var mfi = new MediaInfoFile(txtMediaFolderBase.Text, MediaInfoFileTemplatePath, txtMediaDirRelativeWithoutYoutubeId.Text, uriYouTube);
+         //this.txtSourceMediaId.Text = MediaFile.GetYouTubeId(uriYouTube);
+         var mfi = new MediaFile(txtMediaFolderBase.Text, MediaInfoFileTemplatePath, txtMediaDirRelativeWithoutYoutubeId.Text, uriYouTube);
 
          //TODO: how to download Youtube file programmatically? or perhaps how to command keepvid.com programmatically?
 

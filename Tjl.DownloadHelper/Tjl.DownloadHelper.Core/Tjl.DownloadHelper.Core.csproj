@@ -41,8 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MediaInfoFile.cs" />
+    <Compile Include="MediaFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tjl.MediaInfo\Tjl.MediaInfo.csproj">
+      <Project>{96ef207b-c919-4f68-8e1c-29769a1544bb}</Project>
+      <Name>Tjl.MediaInfo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

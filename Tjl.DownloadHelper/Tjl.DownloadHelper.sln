@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tjl.DownloadHelper.Core", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tjl.MediaInfo", "Tjl.MediaInfo\Tjl.MediaInfo.csproj", "{96EF207B-C919-4F68-8E1C-29769A1544BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tjl.DownloadHelper.Test.Unit.Ms", "Tjl.DownloadHelper.Test.Unit.Ms\Tjl.DownloadHelper.Test.Unit.Ms.csproj", "{34FF5FC8-FEA2-4F6E-9607-0CD8D5E69980}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{96EF207B-C919-4F68-8E1C-29769A1544BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96EF207B-C919-4F68-8E1C-29769A1544BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96EF207B-C919-4F68-8E1C-29769A1544BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FF5FC8-FEA2-4F6E-9607-0CD8D5E69980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FF5FC8-FEA2-4F6E-9607-0CD8D5E69980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FF5FC8-FEA2-4F6E-9607-0CD8D5E69980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FF5FC8-FEA2-4F6E-9607-0CD8D5E69980}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
