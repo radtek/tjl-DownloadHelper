@@ -92,7 +92,12 @@
       <Name>Tjl.DownloadHelper.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Icons\copy.ico" />
+    <Content Include="Icons\copy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <None Include="DataInput\MediaInfoTemplate.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
