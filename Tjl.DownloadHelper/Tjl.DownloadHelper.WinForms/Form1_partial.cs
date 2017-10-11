@@ -28,12 +28,12 @@ namespace Tjl.DownloadHelper.WinForms
 
          var keyValuePairDict = new Dictionary<string, string>
          {
-            {"__FILE-NAME-WITHOUT-PATH__", mfi.DirTargetRelative},
+            {"__FILE-NAME-WITHOUT-PATH__", mfi.FileNameWithoutPostFix},
             {"__DOWNLOAD-TOOL__", txtDownloadTool.Text},
             {"__YOUTUBE-PUBLISHER__", txtMediaFilePublisher.Text},
             {"__MEDIA-LENGTH__", txtMediaLength.Text},
             {"__MEDIA-FORMAT__", txtMediaFormat.Text},
-            {"__ORIGINAL-PUBLISHER__", mfi.DirTargetRelative},
+            {"__ORIGINAL-PUBLISHER__", txtOriginalPublisher.Text},
             {"__DOWNLOAD-DATE__", DateTime.Now.ToString("u")},
             {"__ADDITIONAL-INFO__", txtAdditionalInfo.Text}
          };

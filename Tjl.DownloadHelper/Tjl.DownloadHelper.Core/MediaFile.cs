@@ -13,7 +13,9 @@ namespace Tjl.DownloadHelper.Core
       public string FilePathTemplate { get; }
 
       public Uri YouTubeUri { get; }
-      public string DirTargetRelative { get; }
+      public string FileNameWithoutPostFix { get; }
+
+      public string DirPathTargetFull { get;  }
 
       public string FilePathTargetFull { get; }
 
@@ -24,9 +26,11 @@ namespace Tjl.DownloadHelper.Core
          FilePathTemplate = filePathTemplate;
          YouTubeUri = youTubeUri;
 
-         DirTargetRelative = GetDirTargetRelative(mediaDirRelativeWithoutYoutubeId, youTubeUri);
+         FileNameWithoutPostFix = GetDirTargetRelative(mediaDirRelativeWithoutYoutubeId, youTubeUri);
 
-         FilePathTargetFull = Path.Combine(mediaFileDirBase, mediaDirRelativeWithoutYoutubeId, $"{DirTargetRelative}.txt");
+         DirPathTargetFull = Path.Combine(mediaFileDirBase, mediaDirRelativeWithoutYoutubeId);
+
+         FilePathTargetFull = Path.Combine(DirPathTargetFull, $"{FileNameWithoutPostFix}.txt");
       }
 
       /// <summary>
@@ -66,8 +70,7 @@ namespace Tjl.DownloadHelper.Core
       {
          string fileContentTemplate = File.ReadAllText(FilePathTemplate);
          var fileContentReplaced = ReplaceKeywordsInFile(fileContentTemplate, keyValuePairList);
-         var targetDir = Path.Combine(MediaFileDirBase, DirTargetRelative);
-         Directory.CreateDirectory(targetDir);     //TODO: Warn if exists
+         Directory.CreateDirectory(DirPathTargetFull);     //TODO: Warn if exists
          File.WriteAllText(this.FilePathTargetFull, fileContentReplaced);  //TODO: Warn if exists
       }
    }
