@@ -20,17 +20,17 @@ namespace Tjl.DownloadHelper.Core
       public string FilePathTargetFull { get; }
 
 
-      public MediaFile(string mediaFileDirBase, string filePathTemplate, string mediaDirRelativeWithoutYoutubeId, Uri youTubeUri)
+      public MediaFile(string mediaFileDirBase, FileInfo fiTemplate, string mediaDirRelativeWithoutYoutubeId, Uri youTubeUri)
       {
          MediaFileDirBase = mediaFileDirBase;
-         FilePathTemplate = filePathTemplate;
+         FilePathTemplate = fiTemplate.FullName;
          YouTubeUri = youTubeUri;
 
          FileNameWithoutPostFix = GetDirTargetRelative(mediaDirRelativeWithoutYoutubeId, youTubeUri);
 
          DirPathTargetFull = Path.Combine(mediaFileDirBase, mediaDirRelativeWithoutYoutubeId);
 
-         FilePathTargetFull = Path.Combine(DirPathTargetFull, $"{FileNameWithoutPostFix}.txt");
+         FilePathTargetFull = Path.Combine(DirPathTargetFull, $"{FileNameWithoutPostFix}{Path.GetExtension(fiTemplate.Name)}");
       }
 
       /// <summary>

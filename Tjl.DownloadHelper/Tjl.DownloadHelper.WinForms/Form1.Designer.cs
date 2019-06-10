@@ -34,7 +34,6 @@
          this.txtAdditionalInfo = new System.Windows.Forms.TextBox();
          this.txtFilePathTarget = new System.Windows.Forms.TextBox();
          this.txtMediaDirRelativeWithoutYoutubeId = new System.Windows.Forms.TextBox();
-         this.txtDownloadTool = new System.Windows.Forms.TextBox();
          this.lblDownloadTool = new System.Windows.Forms.Label();
          this.lblMediaDirRelativeWithoutYoutubeId = new System.Windows.Forms.Label();
          this.txtMediaFormat = new System.Windows.Forms.TextBox();
@@ -50,6 +49,9 @@
          this.txtMediaFolderBase = new System.Windows.Forms.TextBox();
          this.lblMediaFolderBase = new System.Windows.Forms.Label();
          this.lblMediaLink = new System.Windows.Forms.Label();
+         this.CmbMediaDescFileType = new System.Windows.Forms.ComboBox();
+         this.LblMediaDescriptionFileTzpe = new System.Windows.Forms.Label();
+         this.CmbDownloadTool = new System.Windows.Forms.ComboBox();
          this.SuspendLayout();
          // 
          // txtUrlSource
@@ -113,15 +115,6 @@
          this.txtMediaDirRelativeWithoutYoutubeId.Name = "txtMediaDirRelativeWithoutYoutubeId";
          this.txtMediaDirRelativeWithoutYoutubeId.Size = new System.Drawing.Size(745, 20);
          this.txtMediaDirRelativeWithoutYoutubeId.TabIndex = 1;
-         // 
-         // txtDownloadTool
-         // 
-         this.txtDownloadTool.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-         this.txtDownloadTool.Location = new System.Drawing.Point(115, 63);
-         this.txtDownloadTool.Name = "txtDownloadTool";
-         this.txtDownloadTool.Size = new System.Drawing.Size(745, 20);
-         this.txtDownloadTool.TabIndex = 2;
          // 
          // lblDownloadTool
          // 
@@ -260,11 +253,40 @@
          this.lblMediaLink.TabIndex = 16;
          this.lblMediaLink.Text = "Media Link:";
          // 
+         // CmbMediaDescFileType
+         // 
+         this.CmbMediaDescFileType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+         this.CmbMediaDescFileType.FormattingEnabled = true;
+         this.CmbMediaDescFileType.Location = new System.Drawing.Point(696, 582);
+         this.CmbMediaDescFileType.Name = "CmbMediaDescFileType";
+         this.CmbMediaDescFileType.Size = new System.Drawing.Size(75, 21);
+         this.CmbMediaDescFileType.TabIndex = 17;
+         // 
+         // LblMediaDescriptionFileTzpe
+         // 
+         this.LblMediaDescriptionFileTzpe.AutoSize = true;
+         this.LblMediaDescriptionFileTzpe.Location = new System.Drawing.Point(581, 586);
+         this.LblMediaDescriptionFileTzpe.Name = "LblMediaDescriptionFileTzpe";
+         this.LblMediaDescriptionFileTzpe.Size = new System.Drawing.Size(109, 13);
+         this.LblMediaDescriptionFileTzpe.TabIndex = 18;
+         this.LblMediaDescriptionFileTzpe.Text = "Description File Type:";
+         // 
+         // CmbDownloadTool
+         // 
+         this.CmbDownloadTool.FormattingEnabled = true;
+         this.CmbDownloadTool.Location = new System.Drawing.Point(115, 65);
+         this.CmbDownloadTool.Name = "CmbDownloadTool";
+         this.CmbDownloadTool.Size = new System.Drawing.Size(744, 21);
+         this.CmbDownloadTool.TabIndex = 19;
+         // 
          // Form1
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.ClientSize = new System.Drawing.Size(872, 610);
+         this.Controls.Add(this.CmbDownloadTool);
+         this.Controls.Add(this.LblMediaDescriptionFileTzpe);
+         this.Controls.Add(this.CmbMediaDescFileType);
          this.Controls.Add(this.lblMediaLink);
          this.Controls.Add(this.lblMediaFolderBase);
          this.Controls.Add(this.txtMediaFolderBase);
@@ -277,7 +299,6 @@
          this.Controls.Add(this.txtMediaFilePublisher);
          this.Controls.Add(this.lblMediaFilePublisher);
          this.Controls.Add(this.lblMediaFormat);
-         this.Controls.Add(this.txtDownloadTool);
          this.Controls.Add(this.txtMediaFormat);
          this.Controls.Add(this.txtMediaDirRelativeWithoutYoutubeId);
          this.Controls.Add(this.txtFilePathTarget);
@@ -303,7 +324,6 @@
       private System.Windows.Forms.TextBox txtAdditionalInfo;
       private System.Windows.Forms.TextBox txtFilePathTarget;
       private System.Windows.Forms.TextBox txtMediaDirRelativeWithoutYoutubeId;
-      private System.Windows.Forms.TextBox txtDownloadTool;
       private System.Windows.Forms.Label lblDownloadTool;
       private System.Windows.Forms.Label lblMediaDirRelativeWithoutYoutubeId;
       private System.Windows.Forms.TextBox txtMediaFormat;
@@ -319,6 +339,9 @@
       private System.Windows.Forms.TextBox txtMediaFolderBase;
       private System.Windows.Forms.Label lblMediaFolderBase;
       private System.Windows.Forms.Label lblMediaLink;
+      private System.Windows.Forms.ComboBox CmbMediaDescFileType;
+      private System.Windows.Forms.Label LblMediaDescriptionFileTzpe;
+      private System.Windows.Forms.ComboBox CmbDownloadTool;
    }
 }
 

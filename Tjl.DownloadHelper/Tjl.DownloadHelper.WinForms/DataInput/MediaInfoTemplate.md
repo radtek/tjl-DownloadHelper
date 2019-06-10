@@ -1,0 +1,10 @@
+# __FILE-NAME-WITHOUT-PATH__
+
+- Download-Tool: __DOWNLOAD-TOOL__
+- YouTube-publisher: __YOUTUBE-PUBLISHER__
+- Length: __MEDIA-LENGTH__
+- format: __MEDIA-FORMAT__
+- Original publisher: __ORIGINAL-PUBLISHER__
+- Download Date: __DOWNLOAD-DATE__
+
+__ADDITIONAL-INFO__
