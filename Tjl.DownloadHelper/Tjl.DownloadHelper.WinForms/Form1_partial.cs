@@ -60,7 +60,7 @@ namespace Tjl.DownloadHelper.WinForms
             var keyValuePairDict = new Dictionary<string, string>
          {
             {"__FILE-NAME-WITHOUT-PATH__", mfi.FileNameWithoutPostFix},
-            {"__DOWNLOAD-TOOL__", CmbDownloadTool.SelectedText},
+            {"__DOWNLOAD-TOOL__", CmbDownloadTool.Text},
             {"__YOUTUBE-PUBLISHER__", txtMediaFilePublisher.Text},
             {"__MEDIA-LENGTH__", txtMediaLength.Text},
             {"__MEDIA-FORMAT__", txtMediaFormat.Text},
