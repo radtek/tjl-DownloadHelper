@@ -7,8 +7,8 @@
     <ProjectGuid>{34FF5FC8-FEA2-4F6E-9607-0CD8D5E69980}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tjl.DownloadHelper.Test.Unit.Ms</RootNamespace>
-    <AssemblyName>Tjl.DownloadHelper.Test.Unit.Ms</AssemblyName>
+    <RootNamespace>Tjl.DownloadHelper.Test.NUnit</RootNamespace>
+    <AssemblyName>Tjl.DownloadHelper.Test.NUnit</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,14 +49,13 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MediaFile03_Video_Mp4_Jamiroquai.cs" />
+    <Compile Include="MediaFile01_Audio_Mp3_AdamHolzman.cs" />
+    <Compile Include="MediaFile01_TestPic_jpg.cs" />
+    <Compile Include="MediaFileTestInstance.cs" />
     <Compile Include="MediaInfoDotNet_MediaFileTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tjl.MediaInfo\Tjl.MediaInfo.csproj">
-      <Project>{96ef207b-c919-4f68-8e1c-29769a1544bb}</Project>
-      <Name>Tjl.MediaInfo</Name>
-    </ProjectReference>
+    <Compile Include="MediaInfoWrapperTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataInput\TestPic01.jpg">
@@ -77,7 +76,12 @@
     <None Include="MediaInfoDotNet.dll.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tjl.MediaInfo\Tjl.MediaInfo.csproj">
+      <Project>{96ef207b-c919-4f68-8e1c-29769a1544bb}</Project>
+      <Name>Tjl.MediaInfo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

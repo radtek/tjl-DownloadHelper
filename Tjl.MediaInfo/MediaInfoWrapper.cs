@@ -9,7 +9,7 @@ namespace Tjl.MediaInfo
 {
    public class MediaInfoWrapper
    {
-      public MediaFile GetMediaInfo(string filepath)
+      public static MediaFile GetMediaInfo(string filepath)
       {
          return new MediaInfoDotNet.MediaFile(filepath);
       }
