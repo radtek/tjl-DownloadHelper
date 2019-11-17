@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2002
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tjl.DownloadHelper.WinForms", "Tjl.DownloadHelper.WinForms\Tjl.DownloadHelper.WinForms.csproj", "{A4C542B3-DED4-4B27-B178-9564B08E1757}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tjl.DownloadHelper.Core", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tjl.MediaInfo", "Tjl.MediaInfo\Tjl.MediaInfo.csproj", "{96EF207B-C919-4F68-8E1C-29769A1544BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tjl.DownloadHelper.Test.Unit.Ms", "Tjl.DownloadHelper.Test.Unit.Ms\Tjl.DownloadHelper.Test.Unit.Ms.csproj", "{34FF5FC8-FEA2-4F6E-9607-0CD8D5E69980}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tjl.DownloadHelper.Test.NUnit", "Tjl.DownloadHelper.Test.NUnit\Tjl.DownloadHelper.Test.NUnit.csproj", "{34FF5FC8-FEA2-4F6E-9607-0CD8D5E69980}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
